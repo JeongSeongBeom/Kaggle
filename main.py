@@ -35,6 +35,7 @@ df_val = df.iloc[idx_val]
 cat_features = ["Sex", "Embarked"]
 num_features = ["Age", "Fare", "SibSp", "Parch"]
 target = "Survived"
+test = 123
 
 tensor_train = TitanicDataset(df_train, cat_features, num_features, target)
 tensor_val = TitanicDataset(df_val, cat_features, num_features, target)
